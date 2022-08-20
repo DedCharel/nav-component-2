@@ -1,0 +1,2 @@
+rootProject.name = "NavComponent2"
+include ':app'
