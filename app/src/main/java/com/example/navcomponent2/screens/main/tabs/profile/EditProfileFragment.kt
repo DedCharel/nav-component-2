@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.navcomponent2.R
 import com.example.navcomponent2.Repositories
 import com.example.navcomponent2.databinding.FragmentEditProfileBinding
@@ -53,10 +54,10 @@ class EditProfileFragment : Fragment(R.layout.fragment_edit_profile) {
     }
 
     private fun onCancelButtonPressed() {
-        TODO("Go back to the previous screen here")
+        findNavController().popBackStack()
     }
 
     private fun observeGoBackEvent() = viewModel.goBackEvent.observeEvent(viewLifecycleOwner) {
-        TODO("Go back to the previous screen here")
+        findNavController().popBackStack()
     }
 }

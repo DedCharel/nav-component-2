@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NavTabs">
-        <!-- TODO: Make sure that SplashActivity has android:exported='true' attribute and
-                   contains intent-filter: MAIN/LAUNCHER -->
+
         <activity
             android:name="com.example.navcomponent2.SplashActivity"
             android:theme="@style/SplashActivity"

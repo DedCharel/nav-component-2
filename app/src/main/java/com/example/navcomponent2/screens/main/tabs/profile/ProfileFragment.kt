@@ -3,10 +3,12 @@ package com.example.navcomponent2.screens.main.tabs.profile
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.navOptions
 import com.example.navcomponent2.R
 import com.example.navcomponent2.Repositories
 import com.example.navcomponent2.databinding.FragmentProfileBinding
 import com.example.navcomponent2.model.accounts.entities.Account
+import com.example.navcomponent2.utils.findTopNavController
 import com.example.navcomponent2.utils.observeEvent
 import com.example.navcomponent2.utils.viewModelCreator
 import java.text.SimpleDateFormat
@@ -43,13 +45,17 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
     }
 
     private fun onEditProfileButtonPressed() {
-        TODO("Launch EditProfileFragment gere over tabs (tabs should not be available from EditProfileFragment")
+        findTopNavController().navigate(R.id.editProfileFragment)
     }
 
     private fun observeRestartAppFromLoginScreenEvent() {
         viewModel.restartWithSignInEvent.observeEvent(viewLifecycleOwner) {
             // user has signed out from the app
-            TODO("Close all tab screens and launch SignInFragment here")
+            findTopNavController().navigate(R.id.signInFragment, null, navOptions{
+                popUpTo(R.id.tabsFragment){
+                    inclusive = true
+                }
+            })
         }
     }
 

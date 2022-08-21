@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Projects/NavComponent2/app/src/main/res/drawable/ic_dashboard.xml" value="0.1885" />
+        <entry key="..\:/Android/Projects/NavComponent2/app/src/main/res/drawable/ic_profile.xml" value="0.1885" />
+        <entry key="..\:/Android/Projects/NavComponent2/app/src/main/res/drawable/ic_settings.xml" value="0.1885" />
         <entry key="..\:/Android/Projects/NavComponent2/app/src/main/res/layout/activity_main.xml" value="0.17604166666666668" />
+        <entry key="..\:/Android/Projects/NavComponent2/app/src/main/res/layout/activity_splash.xml" value="0.3546875" />
+        <entry key="..\:/Android/Projects/NavComponent2/app/src/main/res/layout/fragment_dashboard.xml" value="0.3546875" />
+        <entry key="..\:/Android/Projects/NavComponent2/app/src/main/res/layout/fragment_edit_profile.xml" value="0.3546875" />
+        <entry key="..\:/Android/Projects/NavComponent2/app/src/main/res/layout/fragment_sign_in.xml" value="0.3546875" />
+        <entry key="..\:/Android/Projects/NavComponent2/app/src/main/res/layout/fragment_tabs.xml" value="0.17604166666666668" />
+        <entry key="..\:/Android/Projects/NavComponent2/app/src/main/res/menu/tabs_menu.xml" value="0.3536458333333333" />
       </map>
     </option>
   </component>

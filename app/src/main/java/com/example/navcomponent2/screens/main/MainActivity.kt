@@ -132,19 +132,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun isSignedIn(): Boolean {
-        TODO("Extract isSignedIn flag from extras bundle here")
+        val bundle = intent.extras ?: throw IllegalStateException("No required arguments")
+        val args =MainActivityArgs.fromBundle(bundle)
+        return args.isSignedIn
     }
 
-    private fun getMainNavigationGraphId(): Int {
-        TODO("Please create a main navigation graph and return it's ID here")
-    }
+    private fun getMainNavigationGraphId(): Int = R.navigation.main_graph
 
-    private fun getTabsDestination(): Int {
-        TODO("Please return the ID of TabsFragment destination from main graph here")
-    }
+    private fun getTabsDestination(): Int = R.id.tabsFragment
 
-    private fun getSignInDestination(): Int {
-        TODO("Please return the ID of SignInFragment destination from main graph here")
-    }
-
+    private fun getSignInDestination(): Int = R.id.signInFragment
 }
