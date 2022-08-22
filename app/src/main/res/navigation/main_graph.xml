@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.example.navcomponent2.screens.main.auth.SignInFragment"
-        android:label="fragment_sign_in"
+        android:label="@string/screen_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
             android:id="@+id/action_signInFragment_to_signUpFragment"
@@ -29,12 +29,12 @@
     <fragment
         android:id="@+id/editProfileFragment"
         android:name="com.example.navcomponent2.screens.main.tabs.profile.EditProfileFragment"
-        android:label="fragment_edit_profile"
+        android:label="@string/screen_edit_profile"
         tools:layout="@layout/fragment_edit_profile" />
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.navcomponent2.screens.main.auth.SignUpFragment"
-        android:label="fragment_sign_up"
+        android:label="@string/screen_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <argument
             android:name="email"
